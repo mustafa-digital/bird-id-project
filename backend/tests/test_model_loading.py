@@ -1,6 +1,7 @@
 # backend/tests/test_model_loading.py
 import pytest
 from fastapi.testclient import TestClient
+import backend.main as main_module
 from backend.services.model_loader import load_model
 from backend.core.config import DEVICE, WEIGHTS_PATH
 
@@ -14,8 +15,11 @@ def test_load_model_missing_file():
     """Test that loading a model with a missing weights file raises FileNotFoundError."""
     with pytest.raises(FileNotFoundError):
         load_model("non_existent_file.pth", device=DEVICE)
+"""
+def test_load_model_missing_weights(monkeypatch):
+    monkeypatch.setattr(main_module, "WEIGHTS_PATH", "non_existent_file.pth")
+    with pytest.raises(FileNotFoundError):
+        with TestClient(main_module.app) as client:
+            pass
 
-
-
-
-
+"""
