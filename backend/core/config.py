@@ -23,11 +23,11 @@ PREDICTION_THRESHOLD = 0.05
 
 class Settings(BaseSettings):
     ffmpeg_path: str | None = None
+    weights_path: str | None = None
 
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
-
 
 settings = Settings()
 

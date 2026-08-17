@@ -16,12 +16,7 @@ async def preprocess_audio(audio_file: UploadFile,
         Returns:
             torch.Tensor: The preprocessed audio tensor.
     """
-    try:
-        waveform, _ = await decode_audio_file(audio_file, target_sr, ffmpeg_path)
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise ValueError(f"Could not decode audio: {e}")
+    waveform, _ = await decode_audio_file(audio_file, target_sr, ffmpeg_path)
 
     waveform = waveform.squeeze(0)  # Remove channel dimension
 
