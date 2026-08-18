@@ -1,13 +1,18 @@
 # backend/services/decode_audio_file.py
-from fastapi import UploadFile, HTTPException
-import backend.core.exceptions as exceptions
+from fastapi import UploadFile
 import asyncio
 import tempfile
 from pathlib import Path
 import soundfile as sf
 import torch
+import numpy as np
 import subprocess
 import logging
+
+from backend.core.exceptions import (
+    AudioReadError, UnsupportedAudioError, EmptyAudioError,
+    DecoderUnavailableError, AudioDecodingTimeOutError, AudioUploadSizeError
+)
 
 logger = logging.getLogger(__name__)
 
@@ -27,17 +32,17 @@ async def decode_audio_file(file: UploadFile,
     except Exception as e:
         error_msg = f"Failed to read audio file: {e}"
         logger.warning(error_msg)
-        raise exceptions.AudioReadError(error_msg)
+        raise AudioReadError(error_msg)
 
     if not source_data:
         error_msg = f"Uploaded audio file is empty."
         logger.error(error_msg)
-        raise exceptions.EmptyAudioError(error_msg)
+        raise EmptyAudioError(error_msg)
     
     if len(source_data) > MAX_AUDIO_BYTES:
         error_msg = f"Uploaded file size exceeds maximum size of {MAX_AUDIO_BYTES}"
         logger.error(error_msg)
-        raise exceptions.AudioUploadSizeError(error_msg)
+        raise AudioUploadSizeError(error_msg)
 
     logger.info("Uploaded file read successfully.")
     logger.info(f"Read {len(source_data)} bytes from uploaded file: {filename}")
@@ -86,18 +91,18 @@ async def decode_audio_file(file: UploadFile,
             )
         except subprocess.TimeoutExpired:
             error_msg = "FFmpeg audio decoding timed out"
-            raise exceptions.AudioDecodingTimeOutError(error_msg)
+            raise AudioDecodingTimeOutError(error_msg)
         except Exception as exc:
             error_msg = f"Could not launch FFmpeg: {type(exc).__name__}"
             logger.exception(error_msg)
-            raise exceptions.DecoderUnavailableError(error_msg)
+            raise DecoderUnavailableError(error_msg)
 
         # FFmpeg process completed but unsuccessful
         if result.returncode != 0:
             stderr_text = result.stderr.decode(errors="replace")
             logger.error(f"FFmpeg failed (exit {result.returncode}): {stderr_text}")
             error_msg = f"FFmpeg failed internally"
-            raise exceptions.UnsupportedAudioError(error_msg)
+            raise UnsupportedAudioError(error_msg)
 
         # FFmpeg did not produce a valid wav file
         if not wav_path.is_file() or wav_path.stat().st_size == 0:
@@ -105,7 +110,7 @@ async def decode_audio_file(file: UploadFile,
                 f"FFmpeg success (exit 0) but produced invalid output"
                 f"stdout: {result.stdout.decode(errors='replace')}"
             )
-            raise exceptions.UnsupportedAudioError(
+            raise UnsupportedAudioError(
                 "Audio could not be processed - the file may contain invalid audio" \
                 "or use an unsupported format."
             )
@@ -121,7 +126,13 @@ async def decode_audio_file(file: UploadFile,
             )
         except Exception as e:
             logger.error(f"Soundfile could not decode wav file: {e}")
-            raise exceptions.UnsupportedAudioError(f"Error decoding audio: {e}")
+            raise UnsupportedAudioError(f"Error decoding audio: {e}")
+
+        if samples.size == 0:
+            raise UnsupportedAudioError("Decoded audio contains no samples.")
+
+        if not np.isfinite(samples).all():
+            raise UnsupportedAudioError("Decoded audio contains invalid (NaN/Inf) values.")
             
     waveform = torch.from_numpy(samples.T) # Convert to a torch tensor
     return waveform, sr

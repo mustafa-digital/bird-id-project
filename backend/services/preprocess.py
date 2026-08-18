@@ -1,8 +1,11 @@
 # backend/services/preprocess.py
-from fastapi import UploadFile, HTTPException
+from fastapi import UploadFile
 import torch
+import logging
 
 from backend.services.decode_audio_file import decode_audio_file
+
+logger = logging.getLogger(__name__)
 
 async def preprocess_audio(audio_file: UploadFile,
                            ffmpeg_path: str, 
@@ -17,6 +20,8 @@ async def preprocess_audio(audio_file: UploadFile,
             torch.Tensor: The preprocessed audio tensor.
     """
     waveform, _ = await decode_audio_file(audio_file, target_sr, ffmpeg_path)
+    logger.info(f"Audio file decoded successfully.")
+    logger.info(f"Processing waveform...")
 
     waveform = waveform.squeeze(0)  # Remove channel dimension
 

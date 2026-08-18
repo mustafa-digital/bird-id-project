@@ -46,5 +46,5 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    logger.info("App shutting down.")
+    logger.info("Application shutting down.")
     app.state.model = None
