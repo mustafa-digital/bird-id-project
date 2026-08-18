@@ -1,19 +1,26 @@
 # backend/routers/predictions.py
-from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
+from fastapi import APIRouter, Depends, UploadFile, HTTPException
 from fastapi.concurrency import run_in_threadpool
 import numpy as np
 import logging
 
-from backend.core.dependencies import get_model, get_species_map_dict, get_ffmpeg_path
+from backend.core.dependencies import (
+    get_model, get_species_map_dict, 
+    get_ffmpeg_path, validate_audio_upload
+)
 from backend.services.preprocess import preprocess_audio
 from backend.services.model_inference import model_inference
 from backend.core.config import MODEL_CONFIG, CROP_LENGTH, PREDICTION_THRESHOLD
+from backend.core.exceptions import (
+    AudioReadError, UnsupportedAudioError, EmptyAudioError,
+    DecoderUnavailableError, AudioDecodingTimeOutError, AudioUploadSizeError
+)
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
 @router.post("/predict")
-async def predict(audio_file: UploadFile = File(...), 
+async def predict(audio_file: UploadFile = Depends(validate_audio_upload), 
                   model=Depends(get_model), 
                   species_map_dict=Depends(get_species_map_dict),
                   ffmpeg_path=Depends(get_ffmpeg_path)):
@@ -26,10 +33,18 @@ async def predict(audio_file: UploadFile = File(...),
                                           target_sr=sample_rate, 
                                           crop_samples=crop_samples,
                                           )
-    except ValueError as e:
-        logger.error(f"Audio preprocessing failed: {e}")
+    except (EmptyAudioError, AudioUploadSizeError) as e:
         raise HTTPException(status_code=400, detail=str(e))
+    except (UnsupportedAudioError, AudioReadError) as e:
+        raise HTTPException(status_code=415, detail=str(e))
+    except AudioDecodingTimeOutError as e:
+        raise HTTPException(status_code=504, detail=str(e))
+    except DecoderUnavailableError as e:
+        raise HTTPException(status_code=503, detail=str(e))
 
+    logger.info(f"Audio processing completed.")
+    logger.info(f"Running model inference...")
+    
     # Model inference
     probs = await run_in_threadpool(model_inference, model, waveform)
     logger.info(f"Model inference completed successfully.")
@@ -50,5 +65,7 @@ async def predict(audio_file: UploadFile = File(...),
          "confidence": float(probs_np[i])}
         for i in predicted_indices
     ]
+
+    logger.info(f"Predictions OK. Sending response.")
     return predictions
 

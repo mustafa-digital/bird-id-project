@@ -13,7 +13,8 @@ def setup_logging():
     handler = logging.StreamHandler(sys.stdout)
     handler.addFilter(RequestIDFilter())
     formatter = jsonlogger.JsonFormatter(
-        "%(asctime)s | %(request_id)s | %(name)s | %(levelname)s | %(message)s"
+        "%(asctime)s | %(request_id)s | %(name)s | %(levelname)s | %(message)s",
+        json_indent=4,
     )
     handler.setFormatter(formatter)
 
