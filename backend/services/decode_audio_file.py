@@ -20,7 +20,7 @@ MAX_AUDIO_BYTES = 10 * 1024 * 1024 # 10MB file limit
 
 async def decode_audio_file(file: UploadFile, 
                             target_sr: int, 
-                            ffmpeg_path_str: str):
+                            ffmpeg_path: Path):
 
     # Extract extension from file if it has one, else append with ".audio"
     filename = file.filename or "input.audio"
@@ -58,7 +58,7 @@ async def decode_audio_file(file: UploadFile,
         source_path.write_bytes(source_data)
 
         command = [
-            ffmpeg_path_str,
+            str(ffmpeg_path),
             "-hide_banner",
             "-loglevel",
             "info",
@@ -93,7 +93,9 @@ async def decode_audio_file(file: UploadFile,
             error_msg = "FFmpeg audio decoding timed out"
             raise AudioDecodingTimeOutError(error_msg)
         except Exception as exc:
-            error_msg = f"Could not launch FFmpeg: {type(exc).__name__}"
+            error_msg = (f"Could not launch FFmpeg: {type(exc).__name__}, "
+            f"PATH: {str(ffmpeg_path)}"
+            )
             logger.exception(error_msg)
             raise DecoderUnavailableError(error_msg)
 

@@ -8,6 +8,7 @@ from backend.core.dependencies import (
     get_model, get_species_map_dict, 
     get_ffmpeg_path, validate_audio_upload
 )
+from backend.core.request_context import get_request_id
 from backend.services.preprocess import preprocess_audio
 from backend.services.model_inference import model_inference
 from backend.core.config import MODEL_CONFIG, CROP_LENGTH, PREDICTION_THRESHOLD
@@ -15,24 +16,27 @@ from backend.core.exceptions import (
     AudioReadError, UnsupportedAudioError, EmptyAudioError,
     DecoderUnavailableError, AudioDecodingTimeOutError, AudioUploadSizeError
 )
+from backend.schemas.prediction import PredictionResponse
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
-@router.post("/predict")
+@router.post("/predict", response_model=PredictionResponse)
 async def predict(audio_file: UploadFile = Depends(validate_audio_upload), 
                   model=Depends(get_model), 
                   species_map_dict=Depends(get_species_map_dict),
-                  ffmpeg_path=Depends(get_ffmpeg_path)):
+                  ffmpeg_path=Depends(get_ffmpeg_path),
+                  request_id=Depends(get_request_id)) -> PredictionResponse:
 
     sample_rate = MODEL_CONFIG["sample_rate"] # default 32000
     crop_samples = sample_rate * CROP_LENGTH # default 32000 * 10
     try:
-        waveform = await preprocess_audio(audio_file,
-                                          ffmpeg_path=ffmpeg_path, 
-                                          target_sr=sample_rate, 
-                                          crop_samples=crop_samples,
-                                          )
+        waveform = await preprocess_audio(
+            audio_file,
+            ffmpeg_path=ffmpeg_path, 
+            target_sr=sample_rate, 
+            crop_samples=crop_samples,
+        )
     except (EmptyAudioError, AudioUploadSizeError) as e:
         raise HTTPException(status_code=400, detail=str(e))
     except (UnsupportedAudioError, AudioReadError) as e:
@@ -67,5 +71,8 @@ async def predict(audio_file: UploadFile = Depends(validate_audio_upload),
     ]
 
     logger.info(f"Predictions OK. Sending response.")
-    return predictions
-
+    return PredictionResponse(
+        request_id=request_id,
+        confidence_threshold=PREDICTION_THRESHOLD,
+        predictions=predictions,
+    )

@@ -1,5 +1,6 @@
 # backend/services/preprocess.py
 from fastapi import UploadFile
+from pathlib import Path
 import torch
 import logging
 
@@ -8,7 +9,7 @@ from backend.services.decode_audio_file import decode_audio_file
 logger = logging.getLogger(__name__)
 
 async def preprocess_audio(audio_file: UploadFile,
-                           ffmpeg_path: str, 
+                           ffmpeg_path: Path, 
                            target_sr: int = 32000, 
                            crop_samples: int = 320000) -> torch.Tensor:
     """Preprocess audio bytes for model input.

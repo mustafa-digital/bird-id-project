@@ -1,9 +1,7 @@
 # backend/core/lifespan.py
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-import shutil
 import logging
-import subprocess
 
 from backend.services.model_loader import load_model
 from backend.utils.json import load_json
@@ -31,6 +29,7 @@ async def lifespan(app: FastAPI):
     except RuntimeError as e:
         logger.critical(f"Could not resolve ffmpeg: {e}")
         raise
+    logger.info(f"FFmpeg loaded successfully. Path: {app.state.ffmpeg_path}")
 
     # Load utility files
     logger.info("Loading utility files...")

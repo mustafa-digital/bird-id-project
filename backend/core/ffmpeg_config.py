@@ -1,22 +1,28 @@
 # backend/core/ffmpeg_config.py
 from fastapi import FastAPI
+from pathlib import Path
 import subprocess
 import shutil
+import logging
 
 from backend.core.config import settings
 
-def resolve_ffmpeg_path(configured: str | None) -> str:
+logger = logging.getLogger(__name__)
+
+def resolve_ffmpeg_path(configured: Path | None) -> Path:
     if configured:
         return configured
+    logger.info("FFmpeg path not configured in config, checking system PATH.")
     path = shutil.which("ffmpeg")
     if not path:
         raise RuntimeError("ffmpeg not found in PATH or configured in settings")
-    return path
+    return Path(path)
 
-def validate_ffmpeg(path: str) -> None:
+def validate_ffmpeg(path: Path) -> None:
+    path_str = str(path)
     try:
         result = subprocess.run(
-            [path, "-version"],
+            [path_str, "-version"],
             capture_output=True,
             text=True,
             check=True,
