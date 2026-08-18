@@ -3,6 +3,7 @@ import logging
 from pythonjsonlogger import jsonlogger
 import sys
 from backend.core.request_context import get_request_id
+from backend.core.config import settings
 
 class RequestIDFilter(logging.Filter):
     def filter(self, record):
