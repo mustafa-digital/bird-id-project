@@ -1,5 +1,5 @@
 # config.py
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from pathlib import Path
 
 WEIGHTS_PATH = "backend/models/cnn14_model.pth"
@@ -26,9 +26,10 @@ class Settings(BaseSettings):
     ffmpeg_path: Path | None = None
     logging_level: str | None = "INFO"
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
+    model_config = SettingsConfigDict(
+        env_file = ".env",
+        env_file_encoding = "utf-8",
+    )
 
 settings = Settings()
 

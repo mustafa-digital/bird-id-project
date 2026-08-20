@@ -1,9 +1,8 @@
 # backend/core/logging_config.py
 import logging
-from pythonjsonlogger import jsonlogger
+from pythonjsonlogger.json import JsonFormatter
 import sys
 from backend.core.request_context import get_request_id
-from backend.core.config import settings
 
 class RequestIDFilter(logging.Filter):
     def filter(self, record):
@@ -13,7 +12,7 @@ class RequestIDFilter(logging.Filter):
 def setup_logging():
     handler = logging.StreamHandler(sys.stdout)
     handler.addFilter(RequestIDFilter())
-    formatter = jsonlogger.JsonFormatter(
+    formatter = JsonFormatter(
         "%(asctime)s | %(request_id)s | %(name)s | %(levelname)s | %(message)s",
         json_indent=4,
     )

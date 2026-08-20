@@ -1,22 +1,29 @@
 # backend/routers/predictions.py
-from fastapi import APIRouter, Depends, UploadFile, HTTPException
-from fastapi.concurrency import run_in_threadpool
-import numpy as np
 import logging
 
+import numpy as np
+from fastapi import APIRouter, Depends, HTTPException, UploadFile
+from fastapi.concurrency import run_in_threadpool
+
+from backend.core.config import CROP_LENGTH, MODEL_CONFIG, PREDICTION_THRESHOLD
 from backend.core.dependencies import (
-    get_model, get_species_map_dict, 
-    get_ffmpeg_path, validate_audio_upload
+    get_ffmpeg_path,
+    get_model,
+    get_species_map_dict,
+    validate_audio_upload,
+)
+from backend.core.exceptions import (
+    AudioDecodingTimeOutError,
+    AudioReadError,
+    AudioUploadSizeError,
+    DecoderUnavailableError,
+    EmptyAudioError,
+    UnsupportedAudioError,
 )
 from backend.core.request_context import get_request_id
-from backend.services.preprocess import preprocess_audio
-from backend.services.model_inference import model_inference
-from backend.core.config import MODEL_CONFIG, CROP_LENGTH, PREDICTION_THRESHOLD
-from backend.core.exceptions import (
-    AudioReadError, UnsupportedAudioError, EmptyAudioError,
-    DecoderUnavailableError, AudioDecodingTimeOutError, AudioUploadSizeError
-)
 from backend.schemas.prediction import PredictionResponse
+from backend.services.model_inference import model_inference
+from backend.services.preprocess import preprocess_audio
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -46,12 +53,12 @@ async def predict(audio_file: UploadFile = Depends(validate_audio_upload),
     except DecoderUnavailableError as e:
         raise HTTPException(status_code=503, detail=str(e))
 
-    logger.info(f"Audio processing completed.")
-    logger.info(f"Running model inference...")
+    logger.info("Audio processing completed.")
+    logger.info("Running model inference...")
     
     # Model inference
     probs = await run_in_threadpool(model_inference, model, waveform)
-    logger.info(f"Model inference completed successfully.")
+    logger.info("Model inference completed successfully.")
 
     probs_np = probs.numpy()
     predicted_indices = np.where(probs_np >= PREDICTION_THRESHOLD)[0]
@@ -70,7 +77,7 @@ async def predict(audio_file: UploadFile = Depends(validate_audio_upload),
         for i in predicted_indices
     ]
 
-    logger.info(f"Predictions OK. Sending response.")
+    logger.info("Predictions OK. Sending response.")
     return PredictionResponse(
         request_id=request_id,
         confidence_threshold=PREDICTION_THRESHOLD,
