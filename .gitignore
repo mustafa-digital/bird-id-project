@@ -1,6 +1,10 @@
 data/
 mlruns/
 __pycache__
+.ruff_cache
+.venv
+.pytest_cache
+.vscode
 .env
 node_modules
 *.pth
