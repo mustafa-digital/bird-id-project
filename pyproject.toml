@@ -100,6 +100,9 @@ target-version = "py312"
 quote-style = "double"
 indent-style = "space"
 
+[tool.pytest.ini_options]
+log_cli = false
+log_level = "NOTSET"
 
 [dependency-groups]
 dev = [
