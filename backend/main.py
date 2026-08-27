@@ -1,9 +1,10 @@
 # main.py
 from fastapi import FastAPI
-from backend.core.logging_config import setup_logging
+
 from backend.core.lifespan import lifespan
+from backend.core.logging_config import setup_logging
 from backend.core.middleware import RequestIDMiddleware
-from backend.routers import predictions
+from backend.routers import chat, predictions
 
 # Configure Logging
 setup_logging()
@@ -12,11 +13,13 @@ setup_logging()
 app = FastAPI(
     title="Bird Species Audio Classifier",
     description="API for classifying bird species from audio recordings",
-    lifespan=lifespan
+    lifespan=lifespan,
 )
 
 app.add_middleware(RequestIDMiddleware)
 app.include_router(predictions.router)
+app.include_router(chat.router)
+
 
 # REMOVE LATER
 @app.get("/")
