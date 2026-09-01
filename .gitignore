@@ -9,3 +9,6 @@ __pycache__
 node_modules
 *.pth
 .python-version
+*.sqlite3
+chroma_db/
+backend/vector_store/chroma_db/
