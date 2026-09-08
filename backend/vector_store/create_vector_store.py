@@ -10,20 +10,19 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from wikipediaapi import Wikipedia
 
-from backend.core.config import SPECIES_MAP_PATHS
+from backend.core.config import CHROMA_DB_DIR, EMBEDDING_MODEL, SPECIES_MAP_PATHS
 from backend.utils.json import load_json
 
 species_dict = load_json(SPECIES_MAP_PATHS["species_ebird_map"])
 
 embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_name=EMBEDDING_MODEL,
     encode_kwargs={"normalize_embeddings": True},
 )
 
-db_dir = "./backend/vector_store/chroma_db"
-db_path = Path(db_dir)
+db_path = Path(CHROMA_DB_DIR)
 if db_path.exists():
-    shutil.rmtree(db_dir)
+    shutil.rmtree(CHROMA_DB_DIR)
 
 vector_store = Chroma(
     collection_name="bird_species_wiki_vectors",
