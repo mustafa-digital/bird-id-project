@@ -25,11 +25,31 @@ MODEL_CONFIG = {
 CROP_LENGTH = 10  # seconds
 PREDICTION_THRESHOLD = 0.05
 
+MAX_AUDIO_BYTES = 10 * 1024 * 1024
+ALLOWED_CONTENT_TYPES = [
+    "audio/mpeg",
+    "audio/wav",
+    "audio/x-wav",
+    "audio/webm",
+    "audio/mp4",
+    "audio/aac",
+    "audio/mp3",
+]
+
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+CHROMA_DB_DIR = "./backend/vector_store/chroma_db"
+CHAT_MODEL = "openai/gpt-oss-20b"
+
 
 class Settings(BaseSettings):
     ffmpeg_path: Path | None = None
     logging_level: str | None = "INFO"
     hf_token: SecretStr
+    groq_api_key: SecretStr
+    langsmith_tracing: bool
+    langsmith_endpoint: str
+    langsmith_api_key: SecretStr
+    langsmith_project: str
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"
@@ -38,3 +58,4 @@ class Settings(BaseSettings):
 
 settings = Settings()
 os.environ["HF_TOKEN"] = settings.hf_token.get_secret_value()
+os.environ["GROQ_API_KEY"] = settings.groq_api_key.get_secret_value()
