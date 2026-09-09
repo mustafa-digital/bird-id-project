@@ -11,6 +11,32 @@ from backend.core.dependencies import get_model
 from backend.main import app
 from backend.services import model_inference
 
+# Set the root logger to CRITICAL to suppress almost all logs
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.CRITICAL)
+
+# Disable all handlers on the root logger
+for handler in root_logger.handlers[:]:
+    handler.setLevel(logging.CRITICAL)
+    handler.filter = lambda record: False  # drop all records
+
+# Explicitly silence known noisy loggers
+for name in [
+    "root",
+    "backend",
+    "backend.services",
+    "backend.services.decode_audio_file",
+    "httpx",
+    "httpcore",
+    "asyncio",
+    "numba",
+    "numba.core",
+]:
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.CRITICAL)
+    logger.handlers.clear()
+    logger.propagate = False
+
 
 class MockModel:
     def __call__(self, waveform) -> {}:
@@ -32,20 +58,6 @@ def get_mock_model():
 
 @pytest.fixture(scope="session")
 def client_with_mock_prediction():
-
-    loggers_to_mute = [
-        "uvicorn",
-        "uvicorn.error",
-        "uvicorn.access",
-        "fastapi",
-        "backend",  # Clears your custom backend logs
-    ]
-
-    for logger_name in loggers_to_mute:
-        logger = logging.getLogger(logger_name)
-        logger.handlers = []  # Wipe out console stream handlers
-        logger.propagate = False  # Block bubbling to root
-        logger.setLevel(logging.CRITICAL)  # Only show critical system failures
 
     from unittest.mock import patch
 
