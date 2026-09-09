@@ -9,7 +9,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 
-from backend.core.config import CHAT_MODEL, CHROMA_DB_DIR, EMBEDDING_MODEL
+from backend.core.config import (
+    CHAT_MODEL,
+    CHROMA_DB_DIR,
+    EMBEDDING_MODEL,
+    TOP_K_DOCUMENTS,
+)
 from backend.core.exceptions import InferenceError, RetrievalError
 
 logger = logging.getLogger(__name__)
@@ -29,7 +34,7 @@ vector_store = Chroma(
 
 retriever = vector_store.as_retriever(
     search_type="similarity",
-    search_kwargs={"k": 10},
+    search_kwargs={"k": TOP_K_DOCUMENTS},
 )
 
 llm = ChatGroq(

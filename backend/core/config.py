@@ -40,6 +40,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHROMA_DB_DIR = "./backend/vector_store/chroma_db"
 CHAT_MODEL = "openai/gpt-oss-20b"
 MAX_QUERY_SIZE = 4000
+TOP_K_DOCUMENTS = 10
 
 
 class Settings(BaseSettings):
