@@ -1,7 +1,7 @@
 [project]
 name = "bird-id-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bird species audio classification application"
 readme = "README.md"
 authors = [
     { name = "mustafa.digital", email = "124535608+mustafa-digital@users.noreply.github.com" }
@@ -71,7 +71,6 @@ dependencies = [
     "tomli==2.4.1",
     "torch==2.11.0",
     "torchaudio==2.11.0",
-    "torchcodec==0.15.0",
     "torchlibrosa==0.1.0",
     "truststore==0.10.4",
     "typing-extensions==4.16.0",
@@ -108,7 +107,7 @@ indent-style = "space"
 
 [tool.pytest.ini_options]
 log_cli = false
-log_level = "NOTSET"
+log_level = "CRITICAL"
 
 [dependency-groups]
 dev = [
