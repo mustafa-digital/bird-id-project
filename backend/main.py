@@ -1,5 +1,6 @@
 # main.py
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from backend.core.lifespan import lifespan
 from backend.core.logging_config import setup_logging
@@ -14,6 +15,15 @@ app = FastAPI(
     title="Bird Species Audio Classifier",
     description="API for classifying bird species from audio recordings",
     lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173"
+    ],  # your Vite dev server; add prod domain later
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.add_middleware(RequestIDMiddleware)

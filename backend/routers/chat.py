@@ -15,6 +15,7 @@ router = APIRouter()
 
 @router.post("/chat", response_model=ChatResponse)
 async def llm_chat(request_body: ChatRequest, request_id=Depends(get_request_id)):
+    message_history = request_body.message_history
     user_query = request_body.query
     if not user_query:
         raise HTTPException(
@@ -32,7 +33,7 @@ async def llm_chat(request_body: ChatRequest, request_id=Depends(get_request_id)
         )
 
     try:
-        response = await run_chatbot(user_query)
+        response = await run_chatbot(user_query, message_history)
         return ChatResponse(request_id=request_id, llm_response=response)
     except RetrievalError as e:
         raise HTTPException(status_code=503, detail=str(e))
