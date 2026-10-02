@@ -1,13 +1,17 @@
 # backend/core/logging_config.py
 import logging
-from pythonjsonlogger.json import JsonFormatter
 import sys
+
+from pythonjsonlogger.json import JsonFormatter
+
 from backend.core.request_context import get_request_id
+
 
 class RequestIDFilter(logging.Filter):
     def filter(self, record):
         record.request_id = get_request_id()
         return True
+
 
 def setup_logging():
     handler = logging.StreamHandler(sys.stdout)

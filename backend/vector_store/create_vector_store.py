@@ -11,7 +11,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from wikipediaapi import Wikipedia
 
 from backend.core.config import CHROMA_DB_DIR, EMBEDDING_MODEL, SPECIES_MAP_PATHS
-from backend.utils.json import load_json
+from backend.utils.json_utils import load_json
 
 species_dict = load_json(SPECIES_MAP_PATHS["species_ebird_map"])
 
@@ -49,6 +49,7 @@ for bird in species_dict:
 
     if not page.exists():
         print(f"Skipping: {bird} Wikipedia page not found.")
+        continue
 
     # Split the document, vectorize it, and store it in the vector store
     raw_text = page.text

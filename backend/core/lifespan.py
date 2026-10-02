@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from backend.core.config import DEVICE, SPECIES_MAP_PATHS, WEIGHTS_PATH
 from backend.core.ffmpeg_config import setup_ffmpeg
 from backend.services.model_loader import load_model
-from backend.utils.json import load_json
+from backend.utils.json_utils import load_json
 
 logger = logging.getLogger(__name__)
 

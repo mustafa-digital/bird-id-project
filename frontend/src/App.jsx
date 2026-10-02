@@ -7,7 +7,6 @@ import ChatPanel from './components/ChatPanel';
 function App() {
     const [results, setResults] = useState([]);
     const [error, setError] = useState(null);
-    // const [chatPanelOpen, setChatPanelOpen] = useState(false);
 
     const handlePrediction = (predictions) => {
         setResults(() => [
@@ -30,7 +29,7 @@ function App() {
                 </header>
 
                 <section className="mb-6">
-                    <div className="flex flex-col gap-3 sm:flex-row">
+                    <div className="flex flex-col gap-3 sm:flex-row justify-center">
                         <RecordButton onPrediction={handlePrediction} onError={handleError} />
                         <FileUpload onPrediction={handlePrediction} onError={handleError} />
                     </div>

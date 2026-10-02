@@ -13,7 +13,7 @@ function ResultsList({ results }) {
                         key={r.id}
                         className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
                     >
-                        <div className="mb-2 flex items-center justify-between">
+                        <div className="mb-2 flex items-center justify-center">
                             <span className="text-xs font-medium uppercase tracking-wide text-gray-500">
                                 {r.timestamp.toLocaleTimeString()}
                             </span>
@@ -29,7 +29,7 @@ function ResultsList({ results }) {
                                     return (
                                         <li
                                             key={p.species_code}
-                                            className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center"
+                                            className="flex flex-col items-start justify-center gap-2 sm:flex-row sm:items-center"
                                         >
                                             <span className="text-sm text-gray-800">
                                                 {p.species_name} — {(p.confidence * 100).toFixed(1)}%

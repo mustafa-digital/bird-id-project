@@ -247,6 +247,7 @@ dependencies = [
     { name = "uv" },
     { name = "uvicorn" },
     { name = "wheel" },
+    { name = "wikipedia-api" },
 ]
 
 [package.dev-dependencies]
@@ -263,7 +264,7 @@ requires-dist = [
     { name = "certifi", specifier = "==2026.7.22" },
     { name = "cffi", specifier = "==2.1.1" },
     { name = "charset-normalizer", specifier = "==3.4.9" },
-    { name = "click", specifier = "==8.4.2" },
+    { name = "click", specifier = "==8.5.0" },
     { name = "colorama", specifier = "==0.4.6" },
     { name = "decorator", specifier = "==5.3.1" },
     { name = "deepagents", specifier = ">=0.7.12" },
@@ -327,6 +328,7 @@ requires-dist = [
     { name = "uv", specifier = "==0.12.5" },
     { name = "uvicorn", specifier = "==0.52.1" },
     { name = "wheel", specifier = "==0.47.0" },
+    { name = "wikipedia-api", specifier = "==0.16.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -453,14 +455,11 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.4.2"
+version = "8.5.0"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/76/d4/81420972a676e8ffea40450d8c8c92943e7218a78fe9b64359836cc9876b/click-8.4.2.tar.gz", hash = "sha256:9a6cea6e60b17ebe0a44c5cc636d94f09bd66142c1cd7d8b4cd731c4917a15f6", size = 338000, upload-time = "2026-06-24T17:45:15.148Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/0e/7fa0ef50764b67090eca4114772a2abf8b6148198475e54c660b97caeee6/click-8.5.0.tar.gz", hash = "sha256:ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34", size = 382235, upload-time = "2026-08-26T13:33:14.56Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl", hash = "sha256:e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76", size = 119243, upload-time = "2026-06-24T17:45:13.73Z" },
+    { url = "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl", hash = "sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360", size = 125251, upload-time = "2026-08-26T13:33:12.928Z" },
 ]
 
 [[package]]
@@ -2340,7 +2339,6 @@ wheels = [
     { url = "https://download-r2.pytorch.org/whl/cpu/torchaudio-2.11.0%2Bcpu-cp312-cp312-win_amd64.whl", hash = "sha256:95d517bd1a0a28dacd1c37550ced95cab64f3a7a4ef9b8219b41049388a71163", upload-time = "2026-03-23T15:50:10Z" },
 ]
 
-
 [[package]]
 name = "torchlibrosa"
 version = "0.1.0"
@@ -2607,6 +2605,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/39/62/75f18a0f03b4219c456652c7780e4d749b929eb605c098ce3a5b6b6bc081/wheel-0.47.0.tar.gz", hash = "sha256:cc72bd1009ba0cf63922e28f94d9d83b920aa2bb28f798a31d0691b02fa3c9b3", size = 63854, upload-time = "2026-04-22T15:51:27.727Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/87/1b/9e33c09813d65e248f7f773119148a612516a4bea93e9c6f545f78455b7c/wheel-0.47.0-py3-none-any.whl", hash = "sha256:212281cab4dff978f6cedd499cd893e1f620791ca6ff7107cf270781e587eced", size = 32218, upload-time = "2026-04-22T15:51:26.296Z" },
+]
+
+[[package]]
+name = "wikipedia-api"
+version = "0.16.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "httpx" },
+    { name = "tenacity" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/df/24/547f56be8439c2a230e048f5791fab908bb5bbc9b595d8428caf6ca6d7b3/wikipedia_api-0.16.0.tar.gz", hash = "sha256:27967d058cc26d94752e22f81c3a999bbd3ac3fe2dbac8838b53c56db9cdd8ef", size = 143250, upload-time = "2026-09-04T06:43:43.015Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8d/aa/d81b0fc528835b3a68052ff249225bccf576b26400324c73861b99b1df54/wikipedia_api-0.16.0-py3-none-any.whl", hash = "sha256:60da19a8e380c72f7dc259c85aced764c671890ec8708ab6a7afd24c553bf843", size = 129766, upload-time = "2026-09-04T06:43:41.6Z" },
 ]
 
 [[package]]

@@ -1,13 +1,15 @@
 # backend/core/ffmpeg_config.py
-from fastapi import FastAPI
-from pathlib import Path
-import subprocess
-import shutil
 import logging
+import shutil
+import subprocess
+from pathlib import Path
+
+from fastapi import FastAPI
 
 from backend.core.config import settings
 
 logger = logging.getLogger(__name__)
+
 
 def resolve_ffmpeg_path(configured: Path | None) -> Path:
     if configured:
@@ -18,6 +20,7 @@ def resolve_ffmpeg_path(configured: Path | None) -> Path:
         raise RuntimeError("ffmpeg not found in PATH or configured in settings")
     return Path(path)
 
+
 def validate_ffmpeg(path: Path) -> None:
     path_str = str(path)
     try:
@@ -26,7 +29,7 @@ def validate_ffmpeg(path: Path) -> None:
             capture_output=True,
             text=True,
             check=True,
-            timeout=5
+            timeout=5,
         )
     except FileNotFoundError as e:
         raise RuntimeError(f"ffmpeg binary not found at {path}") from e
@@ -34,6 +37,7 @@ def validate_ffmpeg(path: Path) -> None:
         raise RuntimeError(f"ffmpeg at {path} failed to run: {e.stderr.strip()}") from e
     except subprocess.TimeoutExpired:
         raise RuntimeError(f"ffmpeg at {path} did not respond in time")
+
 
 def setup_ffmpeg(app: FastAPI) -> None:
     path = resolve_ffmpeg_path(settings.ffmpeg_path)

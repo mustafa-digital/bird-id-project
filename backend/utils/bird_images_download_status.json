@@ -1,0 +1,1322 @@
+{
+    "alder flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Empidonax_alnorum_CT2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\alder flycatcher",
+        "ok": true
+    },
+    "american avocet": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/American_Avocet1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american avocet",
+        "ok": true
+    },
+    "american bittern": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Botaurus_lentiginosus_28079.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american bittern",
+        "ok": true
+    },
+    "american crow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Corvus-brachyrhynchos-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american crow",
+        "ok": true
+    },
+    "american goldfinch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american goldfinch",
+        "ok": true
+    },
+    "american kestrel": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/American_Kestrel_%2853468230687%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american kestrel",
+        "ok": true
+    },
+    "buff-bellied pipit": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Anthus_rubescens_-Harney_County%2C_Oregon%2C_USA-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\buff-bellied pipit",
+        "ok": true
+    },
+    "american redstart": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/American_redstart_in_JBWR_%2824754%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american redstart",
+        "ok": true
+    },
+    "american robin": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american robin",
+        "ok": true
+    },
+    "american wigeon": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/American_Wigeon_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american wigeon",
+        "ok": true
+    },
+    "american woodcock": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/American_woodcock_%2895252%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american woodcock",
+        "ok": true
+    },
+    "american tree sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/American_Tree_Sparrow_-_Flickr_-_Fyn_Kynd.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american tree sparrow",
+        "ok": true
+    },
+    "anna's hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Anna%27s_hummingbird_%28Calypte_anna%29_male_in_flight_Campbell_River.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\anna_s hummingbird",
+        "ok": true
+    },
+    "ash-throated flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Myiarchus_cinerascens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ash-throated flycatcher",
+        "ok": true
+    },
+    "baird's sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Baird%27s_sandpiper_%28Calidris_bairdii%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\baird_s sandpiper",
+        "ok": true
+    },
+    "bald eagle": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bald eagle",
+        "ok": true
+    },
+    "baltimore oriole": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\baltimore oriole",
+        "ok": true
+    },
+    "sand martin": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sand_martin_%28Riparia_riparia%29%2C_Guidel-Plage%2C_Brittany%2C_France_%2819765483180%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\sand martin",
+        "ok": true
+    },
+    "barn swallow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rauchschwalbe_Hirundo_rustica.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\barn swallow",
+        "ok": true
+    },
+    "black-and-white warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Black-and-white_warbler_in_Prospect_Park_%2806193%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-and-white warbler",
+        "ok": true
+    },
+    "belted kingfisher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/BeltedKingfisherJG_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\belted kingfisher",
+        "ok": true
+    },
+    "bell's sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/BellsSparrow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bell_s sparrow",
+        "ok": true
+    },
+    "bewick's wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bewicks_Wren.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bewick_s wren",
+        "ok": true
+    },
+    "black-billed cuckoo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Black-billed-cuckoo2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-billed cuckoo",
+        "ok": true
+    },
+    "black-billed magpie": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/BlackBilledMagpie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-billed magpie",
+        "ok": true
+    },
+    "blackburnian warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Blackburnian_warbler_%28Setophaga_fusca%29_male_San_Isidro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blackburnian warbler",
+        "ok": true
+    },
+    "black-capped chickadee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-capped chickadee",
+        "ok": true
+    },
+    "black-chinned hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Black-chinned_hummingbird.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-chinned hummingbird",
+        "ok": true
+    },
+    "black-headed grosbeak": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Pheucticus_melanocephalus_-California%2C_USA-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-headed grosbeak",
+        "ok": true
+    },
+    "blackpoll warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Dendroica_striata_MN.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blackpoll warbler",
+        "ok": true
+    },
+    "black-throated sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Amphispiza_bilineata.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-throated sparrow",
+        "ok": true
+    },
+    "black phoebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Black_phoebe_%28Sayornis_nigricans_aquaticus%29_Palopo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black phoebe",
+        "ok": true
+    },
+    "blue grosbeak": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Blue_Grosbeak_by_Dan_Pancamo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue grosbeak",
+        "ok": true
+    },
+    "blue jay": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Blue_jay_in_PP_%2830960%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue jay",
+        "ok": true
+    },
+    "brown-headed cowbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Brown-headed_cowbird_male_%2871126%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\brown-headed cowbird",
+        "ok": true
+    },
+    "bobolink": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/20250702_adult_male_bobolink_glastonbury_meadows_squre_PD206841.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bobolink",
+        "ok": true
+    },
+    "bonaparte's gull": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Bonaparte%27s_Gull_in_breeding_plumage_-_52016973462.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bonaparte_s gull",
+        "ok": true
+    },
+    "barred owl": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Strix-varia-005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\barred owl",
+        "ok": true
+    },
+    "brewer's blackbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Brewers_Blackbird_Esquimalt_Lagoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\brewer_s blackbird",
+        "ok": true
+    },
+    "brewer's sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Brewer%27s_sparrow_%28Spizella_breweri%29_foraging_in_front_of_an_American_Tarwort_%28Flourensia_cernua%29_in_Picacho_Hills%2C_Las_Cruces%2C_New_Mexico%2C_USA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\brewer_s sparrow",
+        "ok": true
+    },
+    "brown creeper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Brown_creeper_%28Certhia_americana%29_in_Center_City%2C_Philadelphia%2C_PA%2C_USA.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\brown creeper",
+        "ok": true
+    },
+    "brown thrasher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Brown_thrasher_in_CP_%2802147%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\brown thrasher",
+        "ok": true
+    },
+    "broad-tailed hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Male_Broad-tailed_Hummingbird_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\broad-tailed hummingbird",
+        "ok": true
+    },
+    "broad-winged hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\broad-winged hawk",
+        "ok": true
+    },
+    "black-throated blue warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black-throated_blue_warblers_%287140435321%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-throated blue warbler",
+        "ok": true
+    },
+    "black-throated green warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Black-throated_green_warbler_in_PP_%2814050%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-throated green warbler",
+        "ok": true
+    },
+    "black-throated grey warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Black-throated_Gray_Warbler%2C_Anza-Borrego_Desert_State_Park%2C_California.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-throated grey warbler",
+        "ok": true
+    },
+    "bufflehead": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Drake_Bufflehead_LBI_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bufflehead",
+        "ok": true
+    },
+    "blue-grey gnatcatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Blue-gray_gnatcatcher_in_PP_%2872317%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue-grey gnatcatcher",
+        "ok": true
+    },
+    "blue-headed vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Blue-headed_Vireo_%288088895251%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue-headed vireo",
+        "ok": true
+    },
+    "bullock's oriole": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bullock%27s_Oriole.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\bullock_s oriole",
+        "ok": true
+    },
+    "american bushtit": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/BushtitMale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american bushtit",
+        "ok": true
+    },
+    "blue-winged teal": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Blue-Winged_Teal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue-winged teal",
+        "ok": true
+    },
+    "blue-winged warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Vermivora_cyanoptera_-North_Berwick%2C_Maine%2C_USA-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\blue-winged warbler",
+        "ok": true
+    },
+    "cactus wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Cactus_Wren_Sandia_Mountains.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cactus wren",
+        "ok": true
+    },
+    "california gull": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/CaliforniaGull.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\california gull",
+        "ok": true
+    },
+    "california quail": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/California_quail_%28Callipepla_californica%29_male_Tricao.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\california quail",
+        "ok": true
+    },
+    "cape may warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Setophaga_tigrina_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cape may warbler",
+        "ok": true
+    },
+    "canada goose": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Canada_goose_on_Seedskadee_NWR_%2827826185489%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\canada goose",
+        "ok": true
+    },
+    "canada warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Canada_warbler_%28Cardellina_canadensis%29_male_San_Isidro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\canada warbler",
+        "ok": true
+    },
+    "canyon wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Canyon_Wren.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\canyon wren",
+        "ok": true
+    },
+    "carolina wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Carolina_wren_%2814391%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\carolina wren",
+        "ok": true
+    },
+    "cassin's finch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Cassin%27s_Finch_%28male%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cassin_s finch",
+        "ok": true
+    },
+    "caspian tern": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sterna-caspia-010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\caspian tern",
+        "ok": true
+    },
+    "cassin's vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Cassin%27s_Vireo_Las_Cruces.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cassin_s vireo",
+        "ok": true
+    },
+    "cedar waxwing": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cedar_waxwing_in_pokeweed_%2810132%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cedar waxwing",
+        "ok": true
+    },
+    "chipping sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Spizella-passerina-015_edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\chipping sparrow",
+        "ok": true
+    },
+    "chimney swift": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\chimney swift",
+        "ok": true
+    },
+    "chestnut-sided warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Dendroica-pensylvanica-003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\chestnut-sided warbler",
+        "ok": true
+    },
+    "chukar partridge": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Chukarhuhn_Weltvogelpark_Walsrode_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\chukar partridge",
+        "ok": true
+    },
+    "clark's nutcracker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Clark%27s_Nutcracker_Rocky_Mountain_National_Park-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\clark_s nutcracker",
+        "ok": true
+    },
+    "american cliff swallow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Petrochelidon_pyrrhonota_-flight_-Palo_Alto_Baylands-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american cliff swallow",
+        "ok": true
+    },
+    "common goldeneye": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Common_Goldeneye_%28Bucephala_clangula%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common goldeneye",
+        "ok": true
+    },
+    "common grackle": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Common_grackle_in_PP_%2836732%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common grackle",
+        "ok": true
+    },
+    "common loon": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Gavia_immer_-Minocqua%2C_Wisconsin%2C_USA_-swimming-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common loon",
+        "ok": true
+    },
+    "common merganser": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Mergus_merganser_merganser_2078_%285561922560%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common merganser",
+        "ok": true
+    },
+    "common nighthawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common nighthawk",
+        "ok": true
+    },
+    "northern raven": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern raven",
+        "ok": true
+    },
+    "common redpoll": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Carduelis_flammea_CT6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common redpoll",
+        "ok": true
+    },
+    "common tern": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/2014-05-18_Sterna_hirundo%2C_Killingworth_Lake%2C_Northumberland_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common tern",
+        "ok": true
+    },
+    "common yellowthroat": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Common_yellowthroat_in_PP_%2814155%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common yellowthroat",
+        "ok": true
+    },
+    "cooper's hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Accipiter_cooperii_m_Sam_Smith_Toronto3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\cooper_s hawk",
+        "ok": true
+    },
+    "costa's hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hummingbird.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\costa_s hummingbird",
+        "ok": true
+    },
+    "california scrub jay": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/California_Scrub_Jay%2C_Richmond%2C_Contra_Costa%2C_California_%2830644196597%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\california scrub jay",
+        "ok": true
+    },
+    "dark-eyed junco": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\dark-eyed junco",
+        "ok": true
+    },
+    "double-crested cormorant": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Phalacrocorax-auritus-007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\double-crested cormorant",
+        "ok": true
+    },
+    "downy woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Dryobates_pubescens_UL_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\downy woodpecker",
+        "ok": true
+    },
+    "american dusky flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Dusky_Flycatcher_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american dusky flycatcher",
+        "ok": true
+    },
+    "black-necked grebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Black-necked_Grebe_Schwarzhalstaucher.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\black-necked grebe",
+        "ok": true
+    },
+    "eastern bluebird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern bluebird",
+        "ok": true
+    },
+    "eastern kingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eastern_kingbird_on_the_hunt_%2856948%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern kingbird",
+        "ok": true
+    },
+    "eastern meadowlark": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern meadowlark",
+        "ok": true
+    },
+    "eastern phoebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sayornis_phoebe_-Owen_Conservation_Park%2C_Madison%2C_Wisconsin%2C_USA-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern phoebe",
+        "ok": true
+    },
+    "eastern towhee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/20241004_eastern_towhee_pleasant_valley_PD207764.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern towhee",
+        "ok": true
+    },
+    "eastern wood pewee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Eastern_wood_pewee_%2871095%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eastern wood pewee",
+        "ok": true
+    },
+    "eurasian collared dove": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2022-04-06_Streptopelia_decaocto%2C_Plovdiv%2C_Bulgaria_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\eurasian collared dove",
+        "ok": true
+    },
+    "common starling": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Common_starling_%28Sturnus_vulgaris%29_breeding_male_Marken.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\common starling",
+        "ok": true
+    },
+    "evening grosbeak": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hesperiphona_vespertina_CT3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\evening grosbeak",
+        "ok": true
+    },
+    "field sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Field_sparrow_in_CP_%2841484%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\field sparrow",
+        "ok": true
+    },
+    "fish crow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Fish_crow_in_Red_Hook_%2842712%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\fish crow",
+        "ok": true
+    },
+    "red fox sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Passerella_iliaca-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red fox sparrow",
+        "ok": true
+    },
+    "gadwall": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gadwall-Anas-strepera.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\gadwall",
+        "ok": true
+    },
+    "grey-crowned rosy finch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Gray-Crowned_Rosy-Finch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\grey-crowned rosy finch",
+        "ok": true
+    },
+    "green-tailed towhee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Green-tailed_Towhee.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\green-tailed towhee",
+        "ok": true
+    },
+    "eurasian teal": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Eurasian_teal_%28Anas_crecca_crecca%29_male_Qingshui.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": null,
+        "ok": false
+    },
+    "golden-crowned kinglet": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Golden-Crowned_Kinglet_EBFNWR.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\golden-crowned kinglet",
+        "ok": true
+    },
+    "golden-crowned sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Zonotrichia_atricapilla_-British_Columbia%2C_Canada-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\golden-crowned sparrow",
+        "ok": true
+    },
+    "golden eagle": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\golden eagle",
+        "ok": true
+    },
+    "great blue heron": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/GreatBlueHeronInARiver.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\great blue heron",
+        "ok": true
+    },
+    "great crested flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/GreatCrestedFlycatcher.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\great crested flycatcher",
+        "ok": true
+    },
+    "great egret": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Great_Egret_%28Ardea_alba%29_in_Breeding_Plumage%2C_Cape_May_County%2C_New_Jersey%2C_USA_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\great egret",
+        "ok": true
+    },
+    "greater roadrunner": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Greater_Roadrunner_Tingley_Beach.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\greater roadrunner",
+        "ok": true
+    },
+    "greater yellowlegs": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Greater_yellowlegs_%28Tringa_melanoleuca%29_foraging_at_Huntley_Meadows%2C_Alexandria%2C_Virginia%2C_USA.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\greater yellowlegs",
+        "ok": true
+    },
+    "great horned owl": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Bubo_virginianus_06.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\great horned owl",
+        "ok": true
+    },
+    "green heron": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Green_heron_%28Butorides_virescens%29%2C_South_Padre_Island%2C_Texas%2C_USA_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\green heron",
+        "ok": true
+    },
+    "great-tailed grackle": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Great-tailed_grackle_%28Quiscalus_mexicanus_mexicanus%29_male_Copan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\great-tailed grackle",
+        "ok": true
+    },
+    "grey catbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Gray_catbird_%2885315%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\grey catbird",
+        "ok": true
+    },
+    "american grey flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Empidonax_wrightii_Richard_Crossley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american grey flycatcher",
+        "ok": true
+    },
+    "hairy woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Picoides_villosus_monticola_male1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\hairy woodpecker",
+        "ok": true
+    },
+    "hammond's flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Empidonax_hammondii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\hammond_s flycatcher",
+        "ok": true
+    },
+    "european herring gull": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/European_herring_gull_vocalizing_%2800170%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\european herring gull",
+        "ok": true
+    },
+    "hermit thrush": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Hermit_thrush_%2810787%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\hermit thrush",
+        "ok": true
+    },
+    "hooded merganser": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Hooded_merganser_male_in_Central_Park_%2895790%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\hooded merganser",
+        "ok": true
+    },
+    "hooded warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Hooded_Warbler.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\hooded warbler",
+        "ok": true
+    },
+    "horned grebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Podiceps_auritus_%2813909539717%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\horned grebe",
+        "ok": true
+    },
+    "horned lark": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Horned_lark_%28eremophila_alpestris%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\horned lark",
+        "ok": true
+    },
+    "house finch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/House_finch_%2833688%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\house finch",
+        "ok": true
+    },
+    "house sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/House_sparrow_male_in_Prospect_Park_%2853532%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\house sparrow",
+        "ok": true
+    },
+    "house wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/20250926_house_wren_point_meadows_PD201015.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\house wren",
+        "ok": true
+    },
+    "indigo bunting": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Indigo_Bunting_by_Dan_Pancamo_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\indigo bunting",
+        "ok": true
+    },
+    "juniper titmouse": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/JuniperTitmouse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\juniper titmouse",
+        "ok": true
+    },
+    "killdeer": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Killdeer_Heislerville.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\killdeer",
+        "ok": true
+    },
+    "ladder-backed woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ladder-back_Woodpecker_on_Cactus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ladder-backed woodpecker",
+        "ok": true
+    },
+    "lark sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/LarkSparrow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lark sparrow",
+        "ok": true
+    },
+    "lazuli bunting": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Lazuli_Bunting.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lazuli bunting",
+        "ok": true
+    },
+    "least bittern": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Least_Bittern_For_Wiki.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\least bittern",
+        "ok": true
+    },
+    "least flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Empidonax-minimus-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\least flycatcher",
+        "ok": true
+    },
+    "least sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Least_Sandpiper_Foraging.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\least sandpiper",
+        "ok": true
+    },
+    "leconte's thrasher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Le_Conte%27s_Thrasher.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\leconte_s thrasher",
+        "ok": true
+    },
+    "lesser goldfinch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Lesser_Goldfinch_%28_Eastern_race%29_Kerr_WMA_Kerrville_TX_2018-05-06_12-11-15-2_%2842881554344%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lesser goldfinch",
+        "ok": true
+    },
+    "lesser nighthawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lesser_Nighthawk_Sleeping_SPI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lesser nighthawk",
+        "ok": true
+    },
+    "lesser yellowlegs": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lesser_yellowlegs_%2832690%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lesser yellowlegs",
+        "ok": true
+    },
+    "lewis's woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lewis%27s_Woodpecker.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lewis_s woodpecker",
+        "ok": true
+    },
+    "lincoln's sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Lincoln%27s_sparrow_%2814367%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\lincoln_s sparrow",
+        "ok": true
+    },
+    "long-billed curlew": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Long-billed_curlew_at_Drakes_Beach%2C_Point_Reyes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\long-billed curlew",
+        "ok": true
+    },
+    "long-billed dowitcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Limnodromus_scolopaceus_Mike_Baird_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\long-billed dowitcher",
+        "ok": true
+    },
+    "loggerhead shrike": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Shrike_Loggerhead_JG.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\loggerhead shrike",
+        "ok": true
+    },
+    "long-tailed duck": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Long-tailed-duck.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\long-tailed duck",
+        "ok": true
+    },
+    "louisiana waterthrush": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Louisiana_waterthrush_%28Parkesia_motacilla%29_Orange_Walk.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\louisiana waterthrush",
+        "ok": true
+    },
+    "macgillivray's warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Geothlypis_tolmiei_Hungry_Horse_MT_1%2C_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\macgillivray_s warbler",
+        "ok": true
+    },
+    "magnolia warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Magnolia_Warbler_-_May_17%2C_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\magnolia warbler",
+        "ok": true
+    },
+    "mallard": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\mallard",
+        "ok": true
+    },
+    "marsh wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Marshwrenusfws.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\marsh wren",
+        "ok": true
+    },
+    "merlin": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Arthur-Pyle_The_Enchanter_Merlin.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\merlin",
+        "ok": true
+    },
+    "mountain bluebird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Mountain_Bluebird.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\mountain bluebird",
+        "ok": true
+    },
+    "mountain chickadee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Mountain_Chickadee_Sandia_Mountains.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\mountain chickadee",
+        "ok": true
+    },
+    "mourning dove": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Mourning_dove_perched_%2861179%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\mourning dove",
+        "ok": true
+    },
+    "northern cardinal": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern cardinal",
+        "ok": true
+    },
+    "northern flicker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Northern_yellow-shafted_flicker_male_%2833737%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern flicker",
+        "ok": true
+    },
+    "northern harrier": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Circus_hudsonius%2C_male_perched%2C_Berkeley%2C_California_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern harrier",
+        "ok": true
+    },
+    "northern mockingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mockingbird_in_Bay_Ridge_%2885082%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern mockingbird",
+        "ok": true
+    },
+    "northern parula": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/2014-05-21_Northern_Parula%2C_Shenandoah_NP%2C_Virginia_001200_07.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern parula",
+        "ok": true
+    },
+    "northern pintail": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Northern_Pintails_%28Male_%26_Female%29_I_IMG_0911.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern pintail",
+        "ok": true
+    },
+    "northern shoveler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Northern_shoveler_%28Spatula_clypeata%29_male_Marken.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern shoveler",
+        "ok": true
+    },
+    "northern waterthrush": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Northern_Waterthrush_at_the_Pool_in_Central_Park%2C_New_York_City.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern waterthrush",
+        "ok": true
+    },
+    "northern rough-winged swallow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/20250514_northern_rough_winged_swallow_bolton_notch_state_park_PD200438_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\northern rough-winged swallow",
+        "ok": true
+    },
+    "nuttall's woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/NuttallsWoodpecker-28MAR2016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\nuttall_s woodpecker",
+        "ok": true
+    },
+    "olive-sided flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Olive-sided_Flycatcher.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\olive-sided flycatcher",
+        "ok": true
+    },
+    "orange-crowned warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Orange-crowned_warbler1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\orange-crowned warbler",
+        "ok": true
+    },
+    "western osprey": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Osprey_Perched_Snag_Heislerville.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western osprey",
+        "ok": true
+    },
+    "ovenbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ovenbird_%2890497%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ovenbird",
+        "ok": true
+    },
+    "palm warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Palm_warbler_%2841597%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\palm warbler",
+        "ok": true
+    },
+    "pacific-slope flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Empidonax_difficilis_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pacific-slope flycatcher",
+        "ok": true
+    },
+    "pectoral sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Pectoral_Sandpiper3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pectoral sandpiper",
+        "ok": true
+    },
+    "peregrine falcon": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\peregrine falcon",
+        "ok": true
+    },
+    "phainopepla": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Phainopepla_nitens_M_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\phainopepla",
+        "ok": true
+    },
+    "pied-billed grebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Pied-billed_Grebe_0561.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pied-billed grebe",
+        "ok": true
+    },
+    "pileated woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/PileatedWoodpeckerFeedingonTree%2C_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pileated woodpecker",
+        "ok": true
+    },
+    "pine grosbeak": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Pine_Grosbeak_%28Pinicola_enucleator%29_%2813667564073%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pine grosbeak",
+        "ok": true
+    },
+    "pinyon jay": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Gymnorhinus_cyanocephalus1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pinyon jay",
+        "ok": true
+    },
+    "pine siskin": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Carduelis_pinus_CT7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pine siskin",
+        "ok": true
+    },
+    "pine warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Pine_warbler_%2890070%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\pine warbler",
+        "ok": true
+    },
+    "plumbeous vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Vireo_plumbeus2_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\plumbeous vireo",
+        "ok": true
+    },
+    "prairie warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Prairie_Warbler_in_Central_Park%2C_New_York_City.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\prairie warbler",
+        "ok": true
+    },
+    "purple finch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Carpodacus_purpureus_CT3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\purple finch",
+        "ok": true
+    },
+    "pygmy nuthatch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/PygmyNuthatch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": null,
+        "ok": false
+    },
+    "red-breasted merganser": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Red-breasted_Merganser_male_%28Mergus_serrator%29%2C_Barnegat_Inlet%2C_New_Jersey%2C_USA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-breasted merganser",
+        "ok": true
+    },
+    "red-breasted nuthatch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Red-breasted_Nuthatch_%2848859254972%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-breasted nuthatch",
+        "ok": true
+    },
+    "red-breasted sapsucker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sphyrapicus_ruber_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-breasted sapsucker",
+        "ok": true
+    },
+    "red-bellied woodpecker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Red-bellied_Woodpecker-27527.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-bellied woodpecker",
+        "ok": true
+    },
+    "red crossbill": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Red_Crossbills_%28Male%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red crossbill",
+        "ok": true
+    },
+    "redhead": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Redhead_-_Aythya_americana%2C_Oakley_Street%2C_Cambridge%2C_Maryland.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\redhead",
+        "ok": true
+    },
+    "red-eyed vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Vireo_olivaceus_-Madison_-Wisconsin_-USA-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-eyed vireo",
+        "ok": true
+    },
+    "red-necked phalarope": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Red-necked_Phalarope.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-necked phalarope",
+        "ok": true
+    },
+    "red-shouldered hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Red-shouldered_Hawk_%28Buteo_lineatus%29_-_Blue_Cypress_Lake%2C_Florida.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-shouldered hawk",
+        "ok": true
+    },
+    "red-tailed hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Red-tailed_Hawk_%2845812546121%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-tailed hawk",
+        "ok": true
+    },
+    "red-winged blackbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Red-Winged_Blackbird.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\red-winged blackbird",
+        "ok": true
+    },
+    "ring-billed gull": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Larus-delawarensis-021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ring-billed gull",
+        "ok": true
+    },
+    "ring-necked duck": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ring-Necked_Duck.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ring-necked duck",
+        "ok": true
+    },
+    "rose-breasted grosbeak": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/RosebreastedGrosbeak08.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\rose-breasted grosbeak",
+        "ok": true
+    },
+    "rock dove": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\rock dove",
+        "ok": true
+    },
+    "rock wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/RockWren.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\rock wren",
+        "ok": true
+    },
+    "ruby-throated hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ruby-throated hummingbird",
+        "ok": true
+    },
+    "ruby-crowned kinglet": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Regulus_calendula_MP_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ruby-crowned kinglet",
+        "ok": true
+    },
+    "ruddy duck": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Ruddy_Duck_%28Oxyura_jamaicensis%29_RWD2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ruddy duck",
+        "ok": true
+    },
+    "ruffed grouse": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hey_You%21_%2830559610814%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\ruffed grouse",
+        "ok": true
+    },
+    "rufous hummingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rufous_Hummingbird%2C_male_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\rufous hummingbird",
+        "ok": true
+    },
+    "rusty blackbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Euphagus-carolinus-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\rusty blackbird",
+        "ok": true
+    },
+    "sagebrush sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/SagebrushSparrow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\sagebrush sparrow",
+        "ok": true
+    },
+    "sage thrasher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sage_Thrasher_%2834123631044%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\sage thrasher",
+        "ok": true
+    },
+    "savannah sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Passerculus_sandwichensis_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\savannah sparrow",
+        "ok": true
+    },
+    "say's phoebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sayornis_saya_GNP_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\say_s phoebe",
+        "ok": true
+    },
+    "scarlet tanager": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Scarlet_tanager_in_GWC_%2850867%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\scarlet tanager",
+        "ok": true
+    },
+    "scott's oriole": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Scott%27s_Oriole_%2833206326043%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\scott_s oriole",
+        "ok": true
+    },
+    "semipalmated plover": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Semipalmated_Plover_%28Charadrius_semipalmatus%29_Heislerville_Wildlife_Management_Area%2C_New_Jersey%2C_USA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\semipalmated plover",
+        "ok": true
+    },
+    "semipalmated sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Semipalmated_sandpiper_%28Calidris_pusilla%29_-_Heislerville_Wildlife_Management_Area%2C_New_Jersey%2C_USA.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\semipalmated sandpiper",
+        "ok": true
+    },
+    "short-eared owl": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Short_Eared_Owl_on_the_Ground.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\short-eared owl",
+        "ok": true
+    },
+    "sharp-shinned hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Accipiter_striatus%2C_Canet_Road%2C_San_Luis_Obispo_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\sharp-shinned hawk",
+        "ok": true
+    },
+    "snow bunting": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Snow_Bunting_%28Plectrophenax_nivalis%29%2C_Thule%2C_Greenland_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\snow bunting",
+        "ok": true
+    },
+    "snow goose": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Snow_goose_in_Central_Park_%2833138%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": null,
+        "ok": false
+    },
+    "solitary sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/SolitarySandpiper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\solitary sandpiper",
+        "ok": true
+    },
+    "song sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Song_sparrow_in_Prospect_Park_%2893031%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\song sparrow",
+        "ok": true
+    },
+    "sora": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sora_%28Porzana_carolina%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\sora",
+        "ok": true
+    },
+    "spotted sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Actitis-macularia-005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\spotted sandpiper",
+        "ok": true
+    },
+    "spotted towhee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Spotted_Towhee_%2832684403303%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\spotted towhee",
+        "ok": true
+    },
+    "steller's jay": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Steller%27s_Jay_flagstaff_arizona.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\steller_s jay",
+        "ok": true
+    },
+    "swainson's hawk": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Swainson%27s_Hawk_%28Buteo_swainsoni%29_RWD.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\swainson_s hawk",
+        "ok": true
+    },
+    "swamp sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Melospiza_georgiana_MP_01%2C_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\swamp sparrow",
+        "ok": true
+    },
+    "swainson's thrush": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Catharus_ustulatus_Clbrg_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\swainson_s thrush",
+        "ok": true
+    },
+    "tree swallow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Tree_swallow_in_JBWR_%2825579%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\tree swallow",
+        "ok": true
+    },
+    "trumpeter swan": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Trumpeter_swans_in_winter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\trumpeter swan",
+        "ok": true
+    },
+    "tufted titmouse": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Tufted_titmouse_%2884917%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\tufted titmouse",
+        "ok": true
+    },
+    "tundra swan": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Cygnus_bewickii_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\tundra swan",
+        "ok": true
+    },
+    "veery": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Veery_in_CP_%2843277%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\veery",
+        "ok": true
+    },
+    "vesper sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Pooecetes_gramineus_-USA-8_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\vesper sparrow",
+        "ok": true
+    },
+    "violet-green swallow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Violet-green_Swallow%2C_Mono_Lake%2C_California.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\violet-green swallow",
+        "ok": true
+    },
+    "warbling vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Warbling_vireo_%2882141%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\warbling vireo",
+        "ok": true
+    },
+    "western bluebird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Western_bluebird_%28male%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western bluebird",
+        "ok": true
+    },
+    "western grebe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Western_Grebe_swimming.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western grebe",
+        "ok": true
+    },
+    "western kingbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Western_kingbird_%2871748%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western kingbird",
+        "ok": true
+    },
+    "western meadowlark": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sturnella_neglecta_GNP_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western meadowlark",
+        "ok": true
+    },
+    "western sandpiper": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Western_Sandpiper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western sandpiper",
+        "ok": true
+    },
+    "western tanager": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Western_Tanager_%28male%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western tanager",
+        "ok": true
+    },
+    "western wood pewee": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Western_Wood-Peewee_-_Sisters_-_Oregon_S4E1878_%2819236709745%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\western wood pewee",
+        "ok": true
+    },
+    "white-breasted nuthatch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/White-breasted_nuthatch_%2826471%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\white-breasted nuthatch",
+        "ok": true
+    },
+    "white-crowned sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/White-crowned-Sparrow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\white-crowned sparrow",
+        "ok": true
+    },
+    "white-faced ibis": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Adult_white-faced_ibis_%28Plegadis_chihi%29-4026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\white-faced ibis",
+        "ok": true
+    },
+    "white-throated sparrow": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zonotrichia_albicollis_CT1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\white-throated sparrow",
+        "ok": true
+    },
+    "white-throated swift": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/White-throated_Swift_%28Aeronautes_saxatalis%29_in_flight.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\white-throated swift",
+        "ok": true
+    },
+    "willow flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/20250524_willow_flycatcher_major_donnelly_PD202635.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\willow flycatcher",
+        "ok": true
+    },
+    "wilson's snipe": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Gallinago-delicata-002-cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\wilson_s snipe",
+        "ok": true
+    },
+    "wild turkey": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/20260428_tom_wild_turkey_matthaei_botanical_gardens_PD08952.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\wild turkey",
+        "ok": true
+    },
+    "winter wren": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Winter_wren_in_Prospect_Park_%2832249%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\winter wren",
+        "ok": true
+    },
+    "wilson's warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Wilsonia_pusilla.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\wilson_s warbler",
+        "ok": true
+    },
+    "wood duck": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Wood_Duck_Wissahickon_Creek.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\wood duck",
+        "ok": true
+    },
+    "woodhouse's scrub jay": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Western_Scrub_Jay%2C_Santa_Fe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\woodhouse_s scrub jay",
+        "ok": true
+    },
+    "wood thrush": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\wood thrush",
+        "ok": true
+    },
+    "american coot": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/American_coot_in_Prospect_Park_%2806152%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\american coot",
+        "ok": true
+    },
+    "yellow-bellied flycatcher": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Yellow-bellied_Flycatcher_-_Empidonax_flaviventris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\yellow-bellied flycatcher",
+        "ok": true
+    },
+    "yellow-bellied sapsucker": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Yellow-bellied_sapsucker_in_CP_%2840484%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\yellow-bellied sapsucker",
+        "ok": true
+    },
+    "yellow-headed blackbird": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Male_Yellow-headed_Blackbird.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\yellow-headed blackbird",
+        "ok": true
+    },
+    "mangrove warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Dendroica_petechia_2446949099_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\mangrove warbler",
+        "ok": true
+    },
+    "myrtle warbler": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Yellow-rumped_warbler_singing_%2841612%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\myrtle warbler",
+        "ok": true
+    },
+    "yellow-throated vireo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Vireo-flavifrons-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+        "file": "frontend\\src\\assets\\birds\\yellow-throated vireo",
+        "ok": true
+    }
+}

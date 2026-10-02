@@ -33,8 +33,12 @@ vector_store = Chroma(
 )
 
 retriever = vector_store.as_retriever(
-    search_type="similarity",
-    search_kwargs={"k": TOP_K_DOCUMENTS},
+    search_type="mmr",
+    search_kwargs={
+        "k": TOP_K_DOCUMENTS,
+        "fetch_k": 2 * TOP_K_DOCUMENTS,
+        "lambda_mult": 0.5,
+    },
 )
 
 SYSTEM_PROMPT = """
