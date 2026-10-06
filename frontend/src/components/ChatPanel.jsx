@@ -49,7 +49,7 @@ function ChatPanel() {
                         {messages.map((msg, index) => (
                             <div
                                 key={index}
-                                className="mb-2 rounded-md bg-gray-50 px-3 py-2 text-sm text-gray-800 ${msg.role}"
+                                className={`mb-2 rounded-md px-3 py-2 text-sm w-fit ${msg.role === 'ai' ? 'bg-gray-100 text-left' : 'bg-indigo-100 text-right'} ${msg.role === 'ai' ? 'text-gray-800' : 'text-gray-900'}`}
                             >
                                 {msg.message}
                             </div>
