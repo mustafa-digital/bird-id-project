@@ -1,7 +1,6 @@
 # backend/services/rag_service.py
 import logging
 import time
-from pathlib import Path
 
 from langchain_chroma import Chroma
 from langchain_core.exceptions import LangChainException
@@ -24,12 +23,10 @@ embeddings = HuggingFaceEmbeddings(
     encode_kwargs={"normalize_embeddings": True},
 )
 
-db_path = Path(CHROMA_DB_DIR)
-
 vector_store = Chroma(
     collection_name="bird_species_wiki_vectors",
     embedding_function=embeddings,
-    persist_directory=str(db_path),
+    persist_directory=str(CHROMA_DB_DIR),
 )
 
 retriever = vector_store.as_retriever(

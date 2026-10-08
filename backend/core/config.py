@@ -54,6 +54,7 @@ class Settings(BaseSettings):
     langsmith_endpoint: str
     langsmith_api_key: SecretStr
     langsmith_project: str
+    cors_origins: str = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"
@@ -67,3 +68,8 @@ os.environ["GROQ_API_KEY"] = settings.groq_api_key.get_secret_value()
 FFMPEG_PATH = settings.ffmpeg_path
 WEIGHTS_PATH = settings.weights_path
 CHROMA_DB_DIR = settings.chroma_db_dir
+
+# Resolve cors origins if there are multiple separated by commas
+CORS_ORIGINS = [
+    origin.strip() for origin in settings.cors_origins.split(",") if origin.strip()
+]

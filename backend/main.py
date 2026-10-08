@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend.core.config import CORS_ORIGINS
 from backend.core.lifespan import lifespan
 from backend.core.logging_config import setup_logging
 from backend.core.middleware import RequestIDMiddleware
@@ -19,9 +20,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173"
-    ],  # your Vite dev server; add prod domain later
+    allow_origins=CORS_ORIGINS,
     allow_methods=["*"],
     allow_headers=["*"],
 )
