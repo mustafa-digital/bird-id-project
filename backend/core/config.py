@@ -5,12 +5,13 @@ from pathlib import Path
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-WEIGHTS_PATH = "backend/models/cnn14_model.pth"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 SPECIES_MAP_PATHS = {
-    "label_map": "backend/models/label_map.json",
-    "species_ebird_map": "backend/models/species_to_ebird_map.json",
+    "label_map": BASE_DIR / "models" / "label_map.json",
+    "species_ebird_map": BASE_DIR / "models" / "species_to_ebird_map.json",
 }
-# FFMPEG_PATH = r"C:\ffmpeg\ffmpeg-9.0.1-full_build-shared\bin\ffmpeg.exe"
+
 DEVICE = "cpu"
 MODEL_CONFIG = {
     "sample_rate": 32000,
@@ -37,14 +38,15 @@ ALLOWED_CONTENT_TYPES = [
 ]
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-CHROMA_DB_DIR = "./backend/vector_store/chroma_db"
 CHAT_MODEL = "openai/gpt-oss-20b"
 MAX_QUERY_SIZE = 4000
 TOP_K_DOCUMENTS = 10
 
 
 class Settings(BaseSettings):
-    ffmpeg_path: Path | None = None
+    ffmpeg_path: Path
+    weights_path: Path
+    chroma_db_dir: Path
     logging_level: str | None = "INFO"
     hf_token: SecretStr
     groq_api_key: SecretStr
@@ -59,5 +61,9 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+# Some libraries require api keys to be set using os.environ.
 os.environ["HF_TOKEN"] = settings.hf_token.get_secret_value()
 os.environ["GROQ_API_KEY"] = settings.groq_api_key.get_secret_value()
+FFMPEG_PATH = settings.ffmpeg_path
+WEIGHTS_PATH = settings.weights_path
+CHROMA_DB_DIR = settings.chroma_db_dir

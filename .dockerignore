@@ -1,0 +1,15 @@
+.env
+.venv
+.gitignore
+.python-version
+*.pyc
+__pycache__
+.pytest_cache
+*.pth
+.vscode
+.ruff_cache
+bird_image_urls.json
+bird_images_downloads.json
+download_bird_images.py
+extract_bird_images.py
+rename_bird_images.py

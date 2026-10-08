@@ -1,10 +1,12 @@
-from backend.models.panns.panns_models import Cnn14_DecisionLevelAtt
-from backend.core.config import MODEL_CONFIG
+from pathlib import Path
 
 import torch
-import os
 
-def load_model(weights_path: str, device: str ="cpu"):
+from backend.core.config import MODEL_CONFIG
+from backend.models.panns.panns_models import Cnn14_DecisionLevelAtt
+
+
+def load_model(weights_path: Path, device: str = "cpu"):
     """Load the pre-trained model from the specified weights path.
     Args:
         weights_path (str): Path to the model weights file.
@@ -15,13 +17,13 @@ def load_model(weights_path: str, device: str ="cpu"):
         FileNotFoundError: If the weights file does not exist.
         RuntimeError: If the model fails to load due to architecture mismatch or other issues.
     """
-    if not os.path.exists(weights_path):
+    if not weights_path.exists():
         raise FileNotFoundError(f"Model weights not found at {weights_path}")
 
     device = torch.device(device)
     # Load model
     model = Cnn14_DecisionLevelAtt(**MODEL_CONFIG)
-    
+
     # Load weights
     try:
         state_dict = torch.load(weights_path, map_location=device, weights_only=True)
@@ -31,7 +33,7 @@ def load_model(weights_path: str, device: str ="cpu"):
         model.load_state_dict(state_dict)
     except Exception as e:
         raise RuntimeError(f"State dict does not match model architecture: {e}")
-    
+
     model.eval()
     model = model.to(device)
     return model
