@@ -13,3 +13,4 @@ bird_images_downloads.json
 download_bird_images.py
 extract_bird_images.py
 rename_bird_images.py
+tests/

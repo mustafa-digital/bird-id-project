@@ -28,9 +28,3 @@ app.add_middleware(
 app.add_middleware(RequestIDMiddleware)
 app.include_router(predictions.router)
 app.include_router(chat.router)
-
-
-# REMOVE LATER
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the Bird Species Audio Classifier API!"}

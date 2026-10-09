@@ -1,6 +1,7 @@
 #---- STAGE 1: Build the backend ----#
 
 FROM python:3.12-slim-bookworm AS builder
+
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 # Disable development dependencies
@@ -20,7 +21,7 @@ RUN uv sync --frozen --no-dev --no-install-project
 # Copy the backend project files into working directory
 COPY ./backend ./backend
 
-RUN uv sync --frozen --no-dev
+RUN uv sync --frozen --no-dev --no-install-project
 
 # In production, this is where I would load the model weights from S3 bucket
 # NEXT STEP: MODEL LOADING HERE
@@ -31,29 +32,52 @@ RUN uv sync --frozen --no-dev
 #--- STAGE 2: Run the backend ----#
 FROM python:3.12-slim-bookworm AS runtime
 
-WORKDIR /backend
+WORKDIR /app
 
-COPY --from=builder /backend /backend
+COPY --from=builder --chown=app:app /app/backend /app/backend
+COPY --from=builder --chown=app:app /app/.venv /app/.venv
 
 # Install FFmpeg
 RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
 && rm -rf /var/lib/apt/lists/* 
 
-ENV PATH="/backend/.venv/bin:$PATH"
+# Create a non-root user and group for running the application
+RUN groupadd --system app && \
+    useradd --system --gid app --home-dir /app app
+
+# Create a directory for Hugging Face cache and set permissions
+RUN mkdir -p \
+      /app/.cache/huggingface \
+      /app/.cache/numba \
+      /app/backend/vector_store/chroma_db && \
+    chown -R app:app \
+      /app/.cache/huggingface \
+      /app/.cache/numba \
+      /app/backend/vector_store/chroma_db
+
+ENV PATH="/app/.venv/bin:$PATH"
+ENV PYTHONPATH="/app"
+ENV HOME="/app"
+
+# Hugging Face config
+ENV HF_HOME="/app/.cache/huggingface"
+ENV HF_HUB_CACHE="/app/.cache/huggingface/hub"
+ENV HF_HUB_OFFLINE=1
+
+ENV NUMBA_CACHE_DIR="/app/.cache/numba"
 
 # Set environment variables, this is temporary and will be provided using secrets in production
 ENV FFMPEG_PATH=/usr/bin/ffmpeg
 ENV LOGGING_LEVEL=INFO
-ENV CHROMA_DB_DIR=vector_store/chroma_db
+ENV CHROMA_DB_DIR=./backend/vector_store/chroma_db
 
 # Make port 8000 available outside this container
 EXPOSE 8000
 
 # Set up and run as a non-root user for security
-RUN useradd app
 USER app
 
 # Run the FastAPI application using Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 #--- STAGE 2 END ----#
