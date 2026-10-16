@@ -63,6 +63,7 @@ ENV HOME="/app"
 ENV HF_HOME="/app/.cache/huggingface"
 ENV HF_HUB_CACHE="/app/.cache/huggingface/hub"
 ENV HF_HUB_OFFLINE=1
+ENV TRANSFORMERS_OFFLINE=1
 
 ENV NUMBA_CACHE_DIR="/app/.cache/numba"
 

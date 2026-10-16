@@ -1,8 +1,9 @@
 from pathlib import Path
 
 import torch
+from sentence_transformers import SentenceTransformer
 
-from backend.core.config import MODEL_CONFIG
+from backend.core.config import DEVICE, MODEL_CONFIG
 from backend.models.panns.panns_models import Cnn14_DecisionLevelAtt
 
 
@@ -36,4 +37,20 @@ def load_model(weights_path: Path, device: str = "cpu"):
 
     model.eval()
     model = model.to(device)
+    return model
+
+
+def load_embedding_model(embedding_model_dir: Path):
+    if not embedding_model_dir.exists():
+        raise FileNotFoundError(f"Embedding model not found at {embedding_model_dir}")
+
+    try:
+        model = SentenceTransformer(
+            str(embedding_model_dir), local_files_only=True, device=DEVICE
+        )
+    except Exception as e:
+        raise RuntimeError(
+            f"Failed to load embedding model from {embedding_model_dir}: {e}"
+        )
+
     return model

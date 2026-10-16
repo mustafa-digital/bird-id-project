@@ -38,6 +38,7 @@ ALLOWED_CONTENT_TYPES = [
 ]
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL_DIR = BASE_DIR / "vector_store" / "embedding_model"
 CHAT_MODEL = "openai/gpt-oss-20b"
 MAX_QUERY_SIZE = 4000
 TOP_K_DOCUMENTS = 10

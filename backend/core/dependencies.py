@@ -13,6 +13,18 @@ def get_model(request: Request):
     return request.app.state.model
 
 
+def get_vector_store_retriever(request: Request):
+    return request.app.state.retriever
+
+
+def get_chat_model(request: Request):
+    return request.app.state.chat_model
+
+
+def get_chat_prompt_template(request: Request):
+    return request.app.state.chat_prompt_template
+
+
 def get_species_map_dict(request: Request):
     """Dependency to retrieve the species map dict from the application state."""
     return request.app.state.species_map_dict

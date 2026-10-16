@@ -4,7 +4,12 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from backend.core.config import DEVICE, SPECIES_MAP_PATHS, WEIGHTS_PATH
+from backend import rag_config
+from backend.core.config import (
+    DEVICE,
+    SPECIES_MAP_PATHS,
+    WEIGHTS_PATH,
+)
 from backend.core.ffmpeg_config import setup_ffmpeg
 from backend.services.model_loader import load_model
 from backend.utils.json_utils import load_json
@@ -16,13 +21,24 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Async context manager for application lifespan events.
     This method loads the model and other utility files on startup."""
-    logger.info("Loading model...")
+    logger.info("Loading audio model...")
     try:
         app.state.model = load_model(WEIGHTS_PATH, DEVICE)
         logger.info("Model loaded successfully.")
     except (FileNotFoundError, RuntimeError) as e:
         logger.critical(f"Model failed to load, aborting startup: {e}")
         raise
+
+    # Initialize RAG components
+    logger.info("Initializing RAG components...")
+    try:
+        app.state.retriever = rag_config.init_rag_service()
+        app.state.chat_model = rag_config.init_chat_model()
+        app.state.chat_prompt_template = rag_config.init_chat_prompt_template()
+    except RuntimeError as e:
+        logger.critical(e)
+        raise
+    logger.info("Successfully initialized RAG components.")
 
     # FFmpeg setup
     logger.info("Setting up FFmpeg...")
