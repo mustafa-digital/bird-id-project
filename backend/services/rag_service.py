@@ -2,64 +2,31 @@
 import logging
 import time
 
-from fastapi import Depends
-from langchain_chroma import Chroma
 from langchain_core.exceptions import LangChainException
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.vectorstores import VectorStoreRetriever
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEmbeddings
 
-from backend.core.config import (
-    CHAT_MODEL,
-    CHROMA_DB_DIR,
-    EMBEDDING_MODEL,
-    TOP_K_DOCUMENTS,
-)
-from backend.core.dependencies import get_embedding_model
 from backend.core.exceptions import InferenceError, RetrievalError
-from backend.core.rag_prompt import SYSTEM_PROMPT
 
 logger = logging.getLogger(__name__)
 
-embedding_model = Depends(get_embedding_model)
 
-embeddings = HuggingFaceEmbeddings(
-    model_name=EMBEDDING_MODEL,
-    encode_kwargs={"normalize_embeddings": True},
-)
-
-vector_store = Chroma(
-    collection_name="bird_species_wiki_vectors",
-    embedding_function=embeddings,
-    persist_directory=str(CHROMA_DB_DIR),
-)
-
-retriever = vector_store.as_retriever(
-    search_type="mmr",
-    search_kwargs={
-        "k": TOP_K_DOCUMENTS,
-        "fetch_k": 2 * TOP_K_DOCUMENTS,
-        "lambda_mult": 0.5,
-    },
-)
-
-llm = ChatGroq(
-    model=CHAT_MODEL,
-)
-
-prompt_template = ChatPromptTemplate.from_messages(
-    [
-        ("system", SYSTEM_PROMPT),
-        ("ai", "Hello, I am your ornithology assistant. Ask me anything about birds!"),
-        ("placeholder", "{conversation}"),
-        ("human", "<user_query>\n{query}\n</user_query>"),
-    ]
-)
-
-
-async def run_chatbot(query: str, message_history: list | None = None) -> str:
+async def run_chatbot(
+    retriever: VectorStoreRetriever,
+    chat_model: ChatGroq,
+    prompt_template: ChatPromptTemplate,
+    query: str,
+    message_history: list | None = None,
+) -> str:
     logger.info(f"Received message history: {message_history}")
     logger.info("Retrieving documents from vector store.")
+
+    logger.info(
+        "Received user chat request.",
+        extra={"query_length": len(query), "query": query},
+    )
+
     try:
         start_time = time.perf_counter()
         relevant_docs = await retriever.ainvoke(query)
@@ -98,7 +65,7 @@ async def run_chatbot(query: str, message_history: list | None = None) -> str:
 
     try:
         logger.info("Running inference on llm.")
-        response = await llm.ainvoke(formatted_prompt)
+        response = await chat_model.ainvoke(formatted_prompt)
     except LangChainException as e:
         raise InferenceError(e)
 

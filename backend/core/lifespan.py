@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from backend import rag_config
+from backend.core import rag_config
 from backend.core.config import (
     DEVICE,
     SPECIES_MAP_PATHS,

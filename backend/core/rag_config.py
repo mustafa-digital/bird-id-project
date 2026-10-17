@@ -2,7 +2,6 @@
 
 import logging
 
-from backend.rag_prompt import SYSTEM_PROMPT
 from langchain_chroma import Chroma
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
@@ -14,6 +13,7 @@ from backend.core.config import (
     EMBEDDING_MODEL_DIR,
     TOP_K_DOCUMENTS,
 )
+from backend.core.rag_prompt import SYSTEM_PROMPT
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +24,7 @@ def init_rag_service():
     try:
         logger.info("Loading embedding model...")
         embeddings = HuggingFaceEmbeddings(
-            model_name=EMBEDDING_MODEL_DIR,
+            model_name=str(EMBEDDING_MODEL_DIR),
             model_kwargs={"device": "cpu"},
             encode_kwargs={"normalize_embeddings": True},
         )
@@ -57,7 +57,7 @@ def init_rag_service():
         )
         logger.info("Initialized vector store retriever")
     except Exception as e:
-        raise RuntimeError(f"Error: Could not initialize retrieer object: {e}")
+        raise RuntimeError(f"Error: Could not initialize retriever object: {e}")
 
     return retriever
 

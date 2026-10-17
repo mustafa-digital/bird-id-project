@@ -2,6 +2,7 @@
 import logging
 
 from fastapi import File, HTTPException, Request, UploadFile
+from langchain_core.vectorstores import VectorStoreRetriever
 
 from backend.core.config import ALLOWED_CONTENT_TYPES, MAX_AUDIO_BYTES, settings
 
@@ -13,15 +14,15 @@ def get_model(request: Request):
     return request.app.state.model
 
 
-def get_vector_store_retriever(request: Request):
+async def get_vector_store_retriever(request: Request) -> VectorStoreRetriever:
     return request.app.state.retriever
 
 
-def get_chat_model(request: Request):
+async def get_chat_model(request: Request):
     return request.app.state.chat_model
 
 
-def get_chat_prompt_template(request: Request):
+async def get_chat_prompt_template(request: Request):
     return request.app.state.chat_prompt_template
 
 

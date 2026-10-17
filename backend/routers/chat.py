@@ -4,6 +4,11 @@ import logging
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from backend.core.config import MAX_QUERY_SIZE
+from backend.core.dependencies import (
+    get_chat_model,
+    get_chat_prompt_template,
+    get_vector_store_retriever,
+)
 from backend.core.exceptions import InferenceError, RetrievalError
 from backend.core.request_context import get_request_id
 from backend.schemas.chat import ChatRequest, ChatResponse
@@ -14,7 +19,14 @@ router = APIRouter()
 
 
 @router.post("/chat", response_model=ChatResponse)
-async def llm_chat(request_body: ChatRequest, request_id=Depends(get_request_id)):
+async def llm_chat(
+    request_body: ChatRequest,
+    retriever=Depends(get_vector_store_retriever),
+    chat_model=Depends(get_chat_model),
+    prompt_template=Depends(get_chat_prompt_template),
+    request_id=Depends(get_request_id),
+):
+
     message_history = request_body.message_history
     user_query = request_body.query
     if not user_query:
@@ -28,12 +40,15 @@ async def llm_chat(request_body: ChatRequest, request_id=Depends(get_request_id)
             detail=f"User query exceeds maximum length of {MAX_QUERY_SIZE}.",
         )
 
-        logger.info(
-            "Received user chat request.", extra={"query_length": len(user_query)}
-        )
+    logger.info(
+        "Received user chat request.",
+        extra={"query_length": len(user_query), "user_query": user_query},
+    )
 
     try:
-        response = await run_chatbot(user_query, message_history)
+        response = await run_chatbot(
+            retriever, chat_model, prompt_template, user_query, message_history
+        )
         return ChatResponse(request_id=request_id, llm_response=response)
     except RetrievalError as e:
         raise HTTPException(status_code=503, detail=str(e))

@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { queryLLM } from "../services/api";
 
+const DEFAULT_AI_MSG = "Hello, I am your ornithology assistant. Ask me anything about birds!"
+
 function ChatPanel() {
     const [isOpen, setIsOpen] = useState(false);
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState([{role: "ai", message: DEFAULT_AI_MSG}]);
     const [input, setInput] = useState("");
 
     const handleSendMessage = async (e) => {
