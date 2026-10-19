@@ -21,16 +21,23 @@ class EndpointAccessFilter(logging.Filter):
         self.excluded_paths = excluded_paths
 
     def filter(self, record: logging.LogRecord):
-        path = record.args[2] if record.args and len(record.args) >= 3 else ""
+        args = record.args
+
+        # Legacy Uvicorn access record:
+        # (client_addr, method, path, http_version, status_code)
+        if not args or len(args) < 3 or not isinstance(args[2], str):
+            return True
+
+        path = args[2].split("?", 1)[0]
         return not any(
-            path == p or path.startswith(p + "/") for p in self.excluded_paths
+            path == excluded or path.startswith(excluded + "/")
+            for excluded in self.excluded_paths
         )
 
 
 def setup_logging():
     handler = logging.StreamHandler(sys.stdout)
     handler.addFilter(RequestIDFilter())
-    handler.addFilter(EndpointAccessFilter(excluded_paths=EXCLUDED_LOG_PATHS))
     formatter = JsonFormatter(
         "%(asctime)s | %(request_id)s | %(name)s | %(levelname)s | %(message)s",
         json_indent=4,
@@ -45,3 +52,6 @@ def setup_logging():
         uv = logging.getLogger(name)
         uv.handlers = [handler]
         uv.propagate = False
+
+
+logging.getLogger("uvicorn.access").addFilter(EndpointAccessFilter(EXCLUDED_LOG_PATHS))
