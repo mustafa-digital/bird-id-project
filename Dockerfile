@@ -1,84 +1,44 @@
-#---- STAGE 1: Build the backend ----#
-
+#---- STAGE 1: build the virtualenv ----#
 FROM python:3.12-slim-bookworm AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Disable development dependencies
-ENV UV_NO_DEV=1 \
-UV_COMPILE_BYTECODE=1 \
-UV_LINK_MODE=copy
+ENV UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy
 
-# Set the working directory to /app
 WORKDIR /app
-
-# Copy root config files into working directory
 COPY pyproject.toml uv.lock ./
-
-# Sync the project to new environment using uv sync
 RUN uv sync --frozen --no-dev --no-install-project
 
-# Copy the backend project files into working directory
-COPY ./backend ./backend
 
-RUN uv sync --frozen --no-dev --no-install-project
-
-# In production, this is where I would load the model weights from S3 bucket
-# NEXT STEP: MODEL LOADING HERE
-
-#--- STAGE 1 END ----#
-
-
-#--- STAGE 2: Run the backend ----#
+#---- STAGE 2: runtime ----#
 FROM python:3.12-slim-bookworm AS runtime
 
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
+    && rm -rf /var/lib/apt/lists/* \
+    && groupadd --system --gid 10001 appuser \
+    && useradd --system --uid 10001 --gid appuser --create-home --shell /usr/sbin/nologin appuser
+
 WORKDIR /app
 
-COPY --from=builder --chown=app:app /app/backend /app/backend
-COPY --from=builder --chown=app:app /app/.venv /app/.venv
+# Root-owned and read-only to the app
+COPY --from=builder /app/.venv /app/.venv
+COPY backend ./backend
 
-# Install FFmpeg
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
-&& rm -rf /var/lib/apt/lists/* 
+# The only writable areas
+RUN mkdir -p /app/backend/artifacts /app/.cache/numba /app/.cache/huggingface \
+    && chown -R appuser:appuser /app/backend/artifacts /app/.cache
 
-# Create a non-root user and group for running the application
-RUN groupadd --system app && \
-    useradd --system --gid app --home-dir /app app
+ENV PATH="/app/.venv/bin:$PATH" \
+    PYTHONPATH=/app \
+    PYTHONUNBUFFERED=1 \
+    NUMBA_CACHE_DIR=/app/.cache/numba \
+    HF_HOME=/app/.cache/huggingface \
+    HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1 
 
-# Create a directory for Hugging Face cache and set permissions
-RUN mkdir -p \
-      /app/.cache/huggingface \
-      /app/.cache/numba \
-      /app/backend/vector_store/chroma_db && \
-    chown -R app:app \
-      /app/.cache/huggingface \
-      /app/.cache/numba \
-      /app/backend/vector_store/chroma_db
+ENV FFMPEG_PATH="/usr/bin/ffmpeg"
 
-ENV PATH="/app/.venv/bin:$PATH"
-ENV PYTHONPATH="/app"
-ENV HOME="/app"
-
-# Hugging Face config
-ENV HF_HOME="/app/.cache/huggingface"
-ENV HF_HUB_CACHE="/app/.cache/huggingface/hub"
-ENV HF_HUB_OFFLINE=1
-ENV TRANSFORMERS_OFFLINE=1
-
-ENV NUMBA_CACHE_DIR="/app/.cache/numba"
-
-# Set environment variables, this is temporary and will be provided using secrets in production
-ENV FFMPEG_PATH=/usr/bin/ffmpeg
-ENV LOGGING_LEVEL=INFO
-ENV CHROMA_DB_DIR=./backend/vector_store/chroma_db
-
-# Make port 8000 available outside this container
+USER appuser
 EXPOSE 8000
-
-# Set up and run as a non-root user for security
-USER app
-
-# Run the FastAPI application using Uvicorn
 CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
-
-#--- STAGE 2 END ----#

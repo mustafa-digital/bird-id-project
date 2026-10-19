@@ -38,16 +38,20 @@ ALLOWED_CONTENT_TYPES = [
 ]
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-EMBEDDING_MODEL_DIR = BASE_DIR / "vector_store" / "embedding_model"
 CHAT_MODEL = "openai/gpt-oss-20b"
 MAX_QUERY_SIZE = 4000
 TOP_K_DOCUMENTS = 10
 
 
 class Settings(BaseSettings):
-    ffmpeg_path: Path
-    weights_path: Path
-    chroma_db_dir: Path
+    ffmpeg_path: Path | None = Path(
+        "C:\ffmpeg\ffmpeg-9.0.1-full_build-shared\bin\ffmpeg.exe"
+    )
+    weights_path: Path | None = Path(BASE_DIR / "models" / "cnn14_model.pth")
+    chroma_db_dir: Path | None = Path(BASE_DIR / "vector-store" / "chroma_db")
+    embedding_model_dir: Path | None = Path(
+        BASE_DIR / "vector_store" / "embedding_model"
+    )
     logging_level: str | None = "INFO"
     hf_token: SecretStr
     groq_api_key: SecretStr
@@ -55,7 +59,12 @@ class Settings(BaseSettings):
     langsmith_endpoint: str
     langsmith_api_key: SecretStr
     langsmith_project: str
-    cors_origins: str = "http://localhost:5173"
+    s3_bucket: str
+    model_s3_key: str
+    kb_s3_prefix: str
+    embedding_model_s3_prefix: str
+    aws_profile: SecretStr
+    cors_origins: str | None = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"
@@ -66,9 +75,18 @@ settings = Settings()
 # Some libraries require api keys to be set using os.environ.
 os.environ["HF_TOKEN"] = settings.hf_token.get_secret_value()
 os.environ["GROQ_API_KEY"] = settings.groq_api_key.get_secret_value()
+os.environ["AWS_PROFILE"] = (
+    settings.aws_profile.get_secret_value()
+)  # REMOVE THIS IN PRODUCTION
 FFMPEG_PATH = settings.ffmpeg_path
 WEIGHTS_PATH = settings.weights_path
 CHROMA_DB_DIR = settings.chroma_db_dir
+S3_BUCKET = settings.s3_bucket
+MODEL_S3_KEY = settings.model_s3_key
+KB_S3_PREFIX = settings.kb_s3_prefix
+EMBEDDING_MODEL_DIR = settings.embedding_model_dir
+EMBEDDING_MODEL_S3_PREFIX = settings.embedding_model_s3_prefix
+
 
 # Resolve cors origins if there are multiple separated by commas
 CORS_ORIGINS = [

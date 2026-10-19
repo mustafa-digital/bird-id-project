@@ -1,17 +1,25 @@
 # backend/core/lifespan.py
+import asyncio
 import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
 from backend.core import rag_config
+from backend.core.artifacts import ArtifactDownloadError, download_file, download_prefix
 from backend.core.config import (
+    CHROMA_DB_DIR,
     DEVICE,
+    EMBEDDING_MODEL_DIR,
+    EMBEDDING_MODEL_S3_PREFIX,
+    KB_S3_PREFIX,
+    MODEL_S3_KEY,
+    S3_BUCKET,
     SPECIES_MAP_PATHS,
     WEIGHTS_PATH,
 )
 from backend.core.ffmpeg_config import setup_ffmpeg
-from backend.services.model_loader import load_model
+from backend.services.model_loader import load_embedding_model, load_model
 from backend.utils.json_utils import load_json
 
 logger = logging.getLogger(__name__)
@@ -21,11 +29,18 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Async context manager for application lifespan events.
     This method loads the model and other utility files on startup."""
-    logger.info("Loading audio model...")
+
+    logger.info("Loading models and artifacts...")
     try:
+        await asyncio.to_thread(download_file, S3_BUCKET, MODEL_S3_KEY, WEIGHTS_PATH)
+        await asyncio.to_thread(download_prefix, S3_BUCKET, KB_S3_PREFIX, CHROMA_DB_DIR)
+        await asyncio.to_thread(
+            download_prefix, S3_BUCKET, EMBEDDING_MODEL_S3_PREFIX, EMBEDDING_MODEL_DIR
+        )
         app.state.model = load_model(WEIGHTS_PATH, DEVICE)
-        logger.info("Model loaded successfully.")
-    except (FileNotFoundError, RuntimeError) as e:
+        app.state.embedding_model = load_embedding_model(EMBEDDING_MODEL_DIR)
+        logger.info("Models and artifacts loaded successfully.")
+    except (ArtifactDownloadError, FileNotFoundError, RuntimeError) as e:
         logger.critical(f"Model failed to load, aborting startup: {e}")
         raise
 
