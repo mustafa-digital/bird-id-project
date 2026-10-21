@@ -6,7 +6,7 @@ from backend.core.config import CORS_ORIGINS
 from backend.core.lifespan import lifespan
 from backend.core.logging_config import setup_logging
 from backend.core.middleware import RequestIDMiddleware
-from backend.routers import chat, predictions
+from backend.routers import chat, health, predictions
 
 # Configure Logging
 setup_logging()
@@ -28,3 +28,4 @@ app.add_middleware(
 app.add_middleware(RequestIDMiddleware)
 app.include_router(predictions.router)
 app.include_router(chat.router)
+app.include_router(health.router)

@@ -168,7 +168,7 @@ function ResultsList({ results }) {
                   {titleCase(s.species_name)} — {(s.confidence * 100).toFixed(1)}%
                 </span>
                 <img
-                  src={`/src/assets/birds/${s.species_code}.jpg`}
+                  src={`/birds/${s.species_code}.jpg`}
                   alt={`Image of ${s.species_name}`}
                   className="h-80 w-80 max-w-full rounded-md object-cover"
                 />

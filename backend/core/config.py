@@ -63,7 +63,6 @@ class Settings(BaseSettings):
     model_s3_key: str
     kb_s3_prefix: str
     embedding_model_s3_prefix: str
-    aws_profile: SecretStr
     cors_origins: str | None = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
@@ -75,9 +74,6 @@ settings = Settings()
 # Some libraries require api keys to be set using os.environ.
 os.environ["HF_TOKEN"] = settings.hf_token.get_secret_value()
 os.environ["GROQ_API_KEY"] = settings.groq_api_key.get_secret_value()
-os.environ["AWS_PROFILE"] = (
-    settings.aws_profile.get_secret_value()
-)  # REMOVE THIS IN PRODUCTION
 FFMPEG_PATH = settings.ffmpeg_path
 WEIGHTS_PATH = settings.weights_path
 CHROMA_DB_DIR = settings.chroma_db_dir
